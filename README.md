@@ -9,6 +9,8 @@ These projects show my learning in Python object-oriented programming, including
 | Assignment | Project | Result |
 |---|---|---|
 | SD1 | Python OOP Type Converter | Distinction — 20/20 |
+| SD2 | Python OOP ATM Program | Distinction — 20/20 |
+| SD3 | Python OOP ATM Program with Inheritance | Distinction — 28/30 |
 
 ## Level
 

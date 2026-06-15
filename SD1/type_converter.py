@@ -232,48 +232,48 @@ class TypeConverter:
             print("Result:", hex(number))
 
 
-# ============================================================================
-# MAIN PROGRAM EXECUTION
-# ============================================================================
+def main():
+    # Create a single TypeConverter object to use throughout the program
+    # This object will handle all conversion operations
+    converter = TypeConverter()
 
-# Create a single TypeConverter object to use throughout the program
-# This object will handle all conversion operations
-converter = TypeConverter()
+    # Main menu loop: continues running until the user selects option 8 to exit
+    while True:
+        print("\n--- TYPE CONVERSION MENU ---")
+        print("1. Integer to Float")
+        print("2. Float to Integer")
+        print("3. Integer to String")
+        print("4. String to List")
+        print("5. List to String")
+        print("6. Integer to Binary")
+        print("7. Integer to Hexadecimal")
+        print("8. Exit")
 
-# Main menu loop: continues running until the user selects option 8 to exit
-while True:
-    print("\n--- TYPE CONVERSION MENU ---")
-    print("1. Integer to Float")
-    print("2. Float to Integer")
-    print("3. Integer to String")
-    print("4. String to List")
-    print("5. List to String")
-    print("6. Integer to Binary")
-    print("7. Integer to Hexadecimal")
-    print("8. Exit")
+        # Get user input for menu choice and remove extra spaces
+        choice = input("Choose an option (1-8): ").strip()
 
-    # Get user input for menu choice and remove extra spaces
-    choice = input("Choose an option (1-8): ").strip()
+        # Use match-case statement to execute the corresponding conversion
+        match choice:
+            case "1":  # Convert integer to float
+                converter.int_to_float()
+            case "2":  # Convert float to integer
+                converter.float_to_int()
+            case "3":  # Convert integer to string
+                converter.int_to_string()
+            case "4":  # Convert string to list
+                converter.string_to_list()
+            case "5":  # Convert list to string
+                converter.list_to_string()
+            case "6":  # Convert integer to binary
+                converter.int_to_binary()
+            case "7":  # Convert integer to hexadecimal
+                converter.int_to_hex()
+            case "8":  # Exit the program
+                print("Program ended.")
+                break
+            case _:  # Handle invalid input
+                print("Invalid choice, try again.")
 
-    # Use match-case statement to execute the corresponding conversion
-    match choice:
-        case "1":  # Convert integer to float
-            converter.int_to_float()
-        case "2":  # Convert float to integer
-            converter.float_to_int()
-        case "3":  # Convert integer to string
-            converter.int_to_string()
-        case "4":  # Convert string to list
-            converter.string_to_list()
-        case "5":  # Convert list to string
-            converter.list_to_string()
-        case "6":  # Convert integer to binary
-            converter.int_to_binary()
-        case "7":  # Convert integer to hexadecimal
-            converter.int_to_hex()
-        case "8":  # Exit the program
-            print("Program ended.")
-            break  # Terminate the loop and exit the program
-        case _:  # Handle invalid input (default case)
-            # Display an error message if the user enters an invalid choice
-            print("Invalid choice, try again.")
+# Run the program
+if __name__ == "__main__":
+    main()
