@@ -22,6 +22,14 @@ Distinction — 20/20
 
 Requires Python 3.
 
-Command: 
+From the repository root:
 
+```bash
+python SD1/type_converter.py
+```
+
+If you run it from inside the SD1 folder:
+
+```bash
 python type_converter.py
+```
