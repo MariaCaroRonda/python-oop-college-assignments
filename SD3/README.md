@@ -1,32 +1,51 @@
 # SD3: Python OOP ATM Program with Inheritance
 
-An extended ATM simulation created for my **Fundamentals of Object-Oriented Programming 5N0541** module.
+## Project Overview
 
-This assignment builds on the previous ATM program by adding inheritance, customer and administrator user types, login attempt limits, account limits, ATM cash limits, and note payout calculation.
+This project is an object-oriented ATM simulation that extends the functionality of the SD2 ATM program by introducing inheritance and role-based access.
+
+The program allows customers to:
+
+* Log in using an account number and PIN
+* Check their account balance
+* Withdraw cash
+* Lodge cash
+* Exit the program
+
+The program also provides administrator functionality for refilling the ATM with cash.
+
+## Features
+
+* User authentication
+* Login attempt limit and account lockout
+* Balance checking
+* Cash withdrawals
+* Cash lodgements
+* Customer account limits
+* ATM cash availability checks
+* Note payout calculation
+* Administrator ATM refill functionality
+* Menu-driven interface
+* Input validation
+* Error handling
+
+## Technologies Used
+
+* Python 3
 
 ## Skills Demonstrated
 
-- Python classes and inheritance
-- Parent and child classes
-- Object-oriented program structure
-- User authentication with account number and PIN
-- Login attempt limit and account lockout
-- Customer account limits
-- ATM cash availability checks
-- Withdrawal and lodgement handling
-- Administrator ATM refill functionality
-- Note payout calculation
-- Input validation
-- Error handling
-- Testing documentation
+* Object-Oriented Programming (OOP)
+* Inheritance
+* Parent and child classes
+* User authentication
+* Dictionaries and data structures
+* User input validation
+* Error handling
+* Loops and conditional logic
+* Program design
 
-## Result
-
-Distinction — 28/30
-
-## Run
-
-Requires Python 3.
+## How to Run
 
 From the repository root:
 
@@ -34,8 +53,35 @@ From the repository root:
 python SD3/atm_inheritance.py
 ```
 
-If you run it from inside the SD3 folder:
+Or from inside the SD3 folder:
 
 ```bash
 python atm_inheritance.py
 ```
+
+## Example Usage
+
+```text
+--- Welcome to the ATM ---
+
+Enter account number: A001
+Enter PIN: 1234
+
+Login successful.
+
+--- ATM MENU ---
+1. Check Balance
+2. Withdraw Cash
+3. Lodge Cash
+4. Exit
+```
+
+## Documentation
+
+Additional information about the design decisions, development process, and lessons learned can be found in:
+
+* development-notes.md
+
+## Author
+
+Maria Caro
